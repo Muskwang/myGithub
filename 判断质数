@@ -1,0 +1,17 @@
+class Test1{
+    public static void main(String[] args){       
+        java.util.Scanner sc=new java.util.Scanner(System.in);
+        int i=sc.nextInt();
+        int m=2;
+        while(m<i){
+            if(i%m==0){
+                System.out.println(i+"="+m+"x"+i/m+"\ti不是质数");
+                break;
+            }
+            m++;
+        }
+        if(m==i){
+            System.out.println("i是质数");
+        }
+    }
+}
